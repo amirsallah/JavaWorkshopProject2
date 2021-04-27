@@ -18,9 +18,9 @@ public class MusicPlayer
      * The method returns once the playing has been started.
      * @param filename The file to be played.
      */
-    public void startPlaying(String filename)
+    public void startPlaying(Music filename)
     {
-        System.out.println(filename + " is playing...");
+        System.out.println(filename.getAddress()+"("+ filename.getSingerName()+")"+ " is playing...");
         isPlaying = true;
     }
 
@@ -34,6 +34,4 @@ public class MusicPlayer
     public boolean getIsPlaying(){
         return isPlaying;
     }
-
-
 }
